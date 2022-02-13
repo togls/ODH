@@ -31,6 +31,7 @@ async function onOptionChanged(e) {
 
     options.enabled = $('#enabled').prop('checked');
     options.mouseselection = $('#mouseselection').prop('checked');
+    options.mode = $('#mode').val();
     options.hotkey = $('#hotkey').val();
     options.deckname = $('#deckname').val();
     options.dictSelected = $('#dict').val();
@@ -51,6 +52,7 @@ async function onReady() {
     let options = await optionsLoad();
     $('#enabled').prop('checked', options.enabled);
     $('#mouseselection').prop('checked', options.mouseselection);
+    $('#mode').val(options.mode);
     $('#hotkey').val(options.hotkey);
     $('#deckname').val(options.deckname);
     populateDictionary(options.dictNamelist);
@@ -58,6 +60,7 @@ async function onReady() {
 
     $('#enabled').change(onOptionChanged);
     $('#mouseselection').change(onOptionChanged);
+    $('#mode').change(onOptionChanged);
     $('#hotkey').change(onOptionChanged);
     $('#deckname').change(onOptionChanged);
     $('#dict').change(onOptionChanged);

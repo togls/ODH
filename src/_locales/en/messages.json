@@ -72,6 +72,7 @@
     "baTitle": { "message": "Quick options" },
     "baEnabled": { "message": "Enabled" },
     "baMouseselection": { "message": "Mouse Sel." },
+    "baMode": { "message": "Mode" },
     "baHotkey": { "message": "AutoSel." },
 
     "general_Makenotes": { "message": "Make notes for general purpose" },

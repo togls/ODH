@@ -35,12 +35,14 @@ class ODHFront {
         if (!isValidElement())
             return;
 
-        if (this.enabled && this.point !== null && (e.keyCode === this.activateKey || e.charCode === this.activateKey)) {
-            const range = rangeFromPoint(this.point);
-            if (range == null) return;
-            let textSource = new TextSourceRange(range);
-            textSource.selectText();
-            this.mousemoved = false;
+        if (this.enabled && (e.keyCode === this.activateKey || e.charCode === this.activateKey)) {
+            if (this.options.mode === '0' && this.point !== null) {
+                const range = rangeFromPoint(this.point);
+                if (range == null) return;
+                let textSource = new TextSourceRange(range);
+                textSource.selectText();
+                this.mousemoved = false;
+            }
             this.onSelectionEnd(e);
         }
 

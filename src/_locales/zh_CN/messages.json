@@ -70,7 +70,8 @@
     "baTitle": { "message": "快速选项" },
     "baEnabled": { "message": "打开关闭插件" },
     "baMouseselection": { "message": "启用鼠标选词" },
-    "baHotkey": { "message": "自动取词热键" },
+    "baMode": { "message": "取词模式" },
+    "baHotkey": { "message": "取词热键" },
 
     "general_Makenotes": { "message": "通用笔记摘录脚本" },
     "builtin_encn_Collins": { "message": "柯林斯英汉词典(内置)" },
